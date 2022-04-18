@@ -38,7 +38,7 @@ interface AuthorRepository extends ReactiveCrudRepository<Author, String> {
 @Document
 class Author {
 	@Id
+	private String mongoId;
 	private String author_id;
-
 	private String name, average_rating, ratings_count, text_reviews_count;
 }

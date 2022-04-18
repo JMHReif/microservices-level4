@@ -40,7 +40,7 @@ To reproduce this intro example, please follow the steps.
 1. Clone this repository
 2. Run each service (either from an IDE or command line)
 3. Test backing service (books): Open a command line window and execute `curl localhost:8081/db/books`.
-4. Test client service: Open a command line window and execute `curl localhost:8080/goodreads`.
+4. Test client service: Open a command line window and execute `curl localhost:8080/goodreads/books`.
 5. Test backing service (authors): Open a command line window and execute `curl localhost:8082/db/authors`.
 6. See the results of books or authors appear :)
 
@@ -50,6 +50,6 @@ To reproduce this intro example, please follow the steps.
 
 == Previous steps
 
-* https://github.com/JMHReif/microservices-level1[Level1] - Sending a string message from one Spring Boot app to another
-* https://github.com/JMHReif/microservices-level2[Level2] - Retrieving prepopulated Book data from one Spring Boot app to another
-* https://github.com/JMHReif/microservices-level3[Level3] - Storing Book data in MongoDB and retrieving all stored books
+* https://github.com/JMHReif/microservices-level1[Level1^] - Sending a string message from one Spring Boot app to another
+* https://github.com/JMHReif/microservices-level2[Level2^] - Retrieving prepopulated Book data from one Spring Boot app to another
+* https://github.com/JMHReif/microservices-level3[Level3^] - Storing Book data in MongoDB and retrieving all stored books

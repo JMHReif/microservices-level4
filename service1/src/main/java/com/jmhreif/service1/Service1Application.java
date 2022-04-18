@@ -38,9 +38,9 @@ interface BookRepository extends ReactiveCrudRepository<Book, String> {
 @Document
 class Book {
 	@Id
-	private String book_id;
+	private String mongoId;
 	@NonNull
-	private String title;
+	private String book_id;
 
-	private String format, isbn, isbn13, edition_information;
+	private String title, format, isbn, isbn13, edition_information;
 }
