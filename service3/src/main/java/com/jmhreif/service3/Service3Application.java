@@ -2,6 +2,7 @@ package com.jmhreif.service3;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NonNull;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.data.annotation.Id;
@@ -39,6 +40,8 @@ interface AuthorRepository extends ReactiveCrudRepository<Author, String> {
 class Author {
 	@Id
 	private String mongoId;
+	@NonNull
 	private String author_id;
+
 	private String name, average_rating, ratings_count, text_reviews_count;
 }
